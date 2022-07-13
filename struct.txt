@@ -1,0 +1,33 @@
+Objects: Fish.
+		Player extends Fish.
+			handleInput();
+			handleEating();
+			sizeUp();
+			accelerate();
+			dead();
+		Enemy extends Fish.
+			move();
+			dead();
+	 Sword.
+		upgradeSword();
+		addDeadFishBody();
+		checkFull();
+	 Shield.
+		equipShield();
+		removeShield();
+	 EnergyBar.
+		reDrawEneryBar();
+		decreaseEnery();
+		increaseEnergy()
+	 Button.
+		PauseButton extends Button.
+		StartButton
+		ReplayButton
+		ExitButton
+	 ButtonContainer.
+	 DataContainer.
+	 EndGameContainer.
+scenes:  BootScene.
+	 MenuScene.
+	 GameScene.
+	 HudScene.
