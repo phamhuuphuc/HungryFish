@@ -2,10 +2,20 @@
     "preload": {
       "files": [
         {
-            "type": "atlas",
-            "key": "flares",
-            "textureURL": "./assets/flares.png",
-            "atlasURL": "./assets/flares.json"
+          "type": "atlas",
+          "key": "flares",
+          "textureURL": "./assets/flares.png",
+          "atlasURL": "./assets/flares.json"
+        },
+        {
+          "type": "image",
+          "key": "button",
+          "url": "./assets/Image/buttonImage.png"
+        },
+        {
+          "type": "image",
+          "key": "player",
+          "url": "./assets/Sprite/player.png"
         }
       ]
     }

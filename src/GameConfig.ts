@@ -1,12 +1,13 @@
 import { BootScene } from './scenes/BootScene';
 import { GameScene } from './scenes/GameScene';
+import { MenuScene } from './scenes/MenuScene';
 
 export const GameConfig: Phaser.Types.Core.GameConfig = {
   title: 'HungryFish',
   url: 'https://github.com/digitsensitive/phaser3-typescript',
   version: '1.0',
   type: Phaser.AUTO,
-  scene: [BootScene, GameScene],
+  scene: [BootScene, MenuScene, GameScene],
 
   input: {
     keyboard: true
