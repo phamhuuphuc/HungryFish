@@ -8,7 +8,8 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
   version: '1.0',
   type: Phaser.AUTO,
   scene: [BootScene, MenuScene, GameScene],
-
+  width: 896,
+  height: 414,
   input: {
     keyboard: true
   },
@@ -22,8 +23,8 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
     mode: Phaser.Scale.NONE,
     autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
     parent: 'game',
-    width: 1200,
-    height: 700
+    // width: 896,
+    // height: 414
   },
   backgroundColor: 0x262626,
   // render: { pixelArt: true }

@@ -1,5 +1,7 @@
 import { Fish } from "./Fish";
 
+const BASE_SPEED: number = 120;
+const MAX_SPEED: number = 300;
 export class Player extends Fish {
 
     body: Phaser.Physics.Arcade.Body;
@@ -19,43 +21,63 @@ export class Player extends Fish {
 
     init() 
     {
-        this.speed = 0.05;
+        this.speed = BASE_SPEED;
+
         this.scene.physics.world.enable(this);
-    }
-    public move(x: number, y: number, flip: boolean, angle: number)
-    {
-        // console.log(x);
-        // console.log(y);
         
+        this.initfirstPlace();
+    }
+
+    private initfirstPlace()
+    {
+        this.setAngle(240);
+        this.body.setVelocityY(this.speed);
+        this.flipY = true;
+        this.body.setVelocityY((Math.sin(240))*this.speed);
+        this.body.setVelocityX(Math.sqrt(1- Math.pow(Math.sin(240),2))*this.speed);
+    }
+
+    public move(x: number, y: number, flip: number, angle: number)
+    {
         this.x += x;
         this.y += y;
         let a = Math.asin(angle)*180/Math.PI;
-        if(flip)
+        if(flip > 0)
         {
             this.flipY = true;
             if(a < 0)
             {
                 this.setAngle(180 + Math.abs(a));
+                this.body.setVelocityY(-angle*this.speed);
+                this.body.setVelocityX(Math.sqrt(1- Math.pow(angle,2))*this.speed);
             }else{
                 this.setAngle(180 - a);
+                this.body.setVelocityY(-angle*this.speed);
+                this.body.setVelocityX(Math.sqrt(1- Math.pow(angle,2))*this.speed);
             }
         }else{
             this.flipY = false;
             if(a < 0)
             {
                 this.setAngle(360 + a);
+                this.body.setVelocityY(-angle*this.speed);
+                this.body.setVelocityX(-Math.sqrt(1- Math.pow(angle,2))*this.speed);
             }else{
                 this.setAngle(a);
+                this.body.setVelocityY(-angle*this.speed);
+                this.body.setVelocityX(-Math.sqrt(1- Math.pow(angle,2))*this.speed);
             }
         }
     }
 
-    public constantMove(x: number, y: number)
+    public accelerate()
+    {   
+       this.speed = MAX_SPEED;
+    }
+
+    public resetSpeed()
     {
-        this.x += x*0.12;//this.speed;
-        this.y -= y*0.12;//this.speed;
-        // this.body.setVelocityX(x/x *20);
-        // this.body.setVelocityY(-y/y *20);
+        this.speed = BASE_SPEED;
     }
     
     public getX(): number
