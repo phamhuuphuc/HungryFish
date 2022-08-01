@@ -9,14 +9,140 @@
         },
         {
           "type": "image",
-          "key": "button",
-          "url": "./assets/Image/buttonImage.png"
+          "key": "fish0",
+          "url": "./assets/sprite/fish0.png"
         },
         {
           "type": "image",
-          "key": "player",
-          "url": "./assets/Sprite/player.png"
+          "key": "fish1",
+          "url": "./assets/sprite/fish1.png"
+        },
+        {
+          "type": "image",
+          "key": "fish2",
+          "url": "./assets/sprite/fish2.png"
+        },
+        {
+          "type": "tilemapTiledJSON",
+          "key": "map",
+          "url": "./assets/map/map.json"
+        },
+        {
+          "type": "image",
+          "key": "map",
+          "url": "./assets/img/oceanBg.png"
+        },
+        {
+          "type": "image",
+          "key": "fish3",
+          "url": "./assets/sprite/fish3.png"
+        },
+        {
+          "type": "image",
+          "key": "fish4",
+          "url": "./assets/sprite/fish4.png"
+        },
+        {
+          "type": "image",
+          "key": "button",
+          "url": "./assets/img/button.png"
+        },
+        {
+          "type": "image",
+          "key": "background",
+          "url": "./assets/img/oceanBg.png"
+        },
+        {
+          "type": "image",
+          "key": "sword0",
+          "url": "./assets/sprite/sword0.png"
+        },
+        {
+          "type": "image",
+          "key": "sword1",
+          "url": "./assets/sprite/sword1.png"
+        },
+        {
+          "type": "image",
+          "key": "sword2",
+          "url": "./assets/sprite/sword2.png"
+        },
+        {
+          "type": "image",
+          "key": "sword3",
+          "url": "./assets/sprite/sword3.png"
+        },
+        {
+          "type": "image",
+          "key": "sword00",
+          "url": "./assets/sprite/sword00.png"
+        },
+        {
+          "type": "image",
+          "key": "sword10",
+          "url": "./assets/sprite/sword10.png"
+        },
+        {
+          "type": "image",
+          "key": "sword20",
+          "url": "./assets/sprite/sword20.png"
+        },
+        {
+          "type": "image",
+          "key": "sword30",
+          "url": "./assets/sprite/sword30.png"
+        },
+        {
+          "type": "image",
+          "key": "fishdead",
+          "url": "./assets/sprite/fishdead.png"
+        },
+        {
+          "type": "image",
+          "key": "shield",
+          "url": "./assets/sprite/shield.png"
+        },
+        {
+          "type": "image",
+          "key": "acc",
+          "url": "./assets/sprite/acc.png"
+        },
+        {
+          "type": "image",
+          "key": "joybase",
+          "url": "./assets/sprite/joybase.png"
+        },
+        {
+          "type": "image",
+          "key": "joythumb",
+          "url": "./assets/sprite/joythumb.png"
+        },
+        {
+          "type": "image",
+          "key": "bg",
+          "url": "./assets/img/bg.png"
+        },
+        {
+          "type": "image",
+          "key": "bronze",
+          "url": "./assets/img/bronzebadge.png"
+        },
+        {
+          "type": "image",
+          "key": "gold",
+          "url": "./assets/img/goldbadge.png"
+        },
+        {
+          "type": "image",
+          "key": "silver",
+          "url": "./assets/img/silverbadge.png"
+        },
+        {
+          "type": "image",
+          "key": "thunder",
+          "url": "./assets/img/thunder.png"
         }
+        
       ]
     }
   }
